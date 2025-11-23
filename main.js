@@ -71,11 +71,26 @@ async function searchPoke(term){
 
 /*
 print the data for the Pokemon in a neat
-and clean way.
+and clean way. print out the name, weight, height, base experience, and
+all the moves for that Pokemon.
 */
 function printPoke(json){
-    console.log(json);
-
+    let name = json.name;
+    let weight = json.weight;
+    let height = json.height;
+    let base_exp = json.base_experience;
+    
+    let moves = json.moves;
+    for(let i=0;i<moves.length;i++){
+        moves[i] = moves[i].move.name;
+    }
+    
+    console.log("Name:", name);
+    console.log("Weight:", weight);
+    console.log("Height:", height);
+    console.log("Base experience:", base_exp);
+    console.log("Move Set:", moves);
+    
 }
 
 
@@ -99,7 +114,6 @@ async function searchItem(term){
     // call run
     run();
 }
-
 
 
 /*
@@ -152,7 +166,7 @@ Should this be a self Invoking function??
 function run() {
     // call showMenu()
     showMenu();
-    
+
     // use readline to ask the user to enter their choice
     cb = "1";
     rl.question("What function do you want to run? ", (response) => {
