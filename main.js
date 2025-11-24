@@ -33,7 +33,6 @@ input: value to pass to function (cb) eg. Pikachu
 function prompt(cb) {
     // use readline to ask for a search term
     rl.question("What term do you want to search for? ", (response) => {
-        console.log('response:', response);
         cb(response);  // call the cb function the given term
     });
 }
@@ -48,7 +47,7 @@ again to reprompt.
 */
 async function searchPoke(term){
     console.log("searching for", term);
-    
+    console.log();
     try{
         const response = await fetch(apiUrl + '/pokemon/' + term);
         const data = await response.json(); // converts the raw response into a useable JS obj
@@ -90,6 +89,8 @@ function printPoke(json){
     console.log("Height:", height);
     console.log("Base experience:", base_exp);
     console.log("Move Set:", moves);
+    console.log("\n-----------------------------------------------------------------");
+
     
 }
 
@@ -100,6 +101,7 @@ Calls the corresponding printItem(json) method. Calls run() to reprompt.
 */
 async function searchItem(term){
     console.log("searching for", term);
+    console.log();
     try{
         const response = await fetch(apiUrl + '/item/' + term);
         const data = await response.json(); // converts the raw response into a useable JS obj
@@ -121,8 +123,18 @@ print the data for the Item in a neat
 and clean way. Pick at least four points to print.
 */
 function printItem(json){
-    console.log("printItem\n");
+    //console.log(json);
 
+    let name = json.name;
+    let category = json.category.name;
+    let cost = json.cost;
+    let effect_entry = json.effect_entries[0].effect;
+
+    console.log("Name:", name);
+    console.log("Category:", category);
+    console.log("Cost:", cost);
+    console.log("Description:", effect_entry);
+    console.log("\n-----------------------------------------------------------------");
 }
 
 
@@ -133,6 +145,7 @@ Calls the corresponding printMove(json) method.
 */
 async function searchMove(term){
     console.log("searching for", term);
+    console.log();
     try{
         const response = await fetch(apiUrl + '/move/' + term);
         const data = await response.json(); // converts the raw response into a useable JS obj
@@ -150,7 +163,27 @@ async function searchMove(term){
 formatted way. Calls run() to reprompt
 */
 function printMove(json){
-    console.log("printMove\n");
+    let name = json.name;
+    let power = json.power;
+    let priority = json.priority;
+    let target = json.target.name;
+    let damage_class = json.damage_class.name;
+    let accuracy = json.accuracy;
+    let description = json.effect_entries[0].short_effect;
+    let generation = json.generation.name;
+    let type = json.type.name;
+    let flavor = json.flavor_text_entries[0].flavor_text;
+
+    console.log("Name:", name);
+    console.log("Description:", flavor);
+    // console.log(flavor);
+    console.log("Type:", type);
+    console.log("Damage class:", damage_class);
+    console.log("Power:", power);
+    console.log("Priority:", priority);
+    console.log("Target:", target);
+    console.log("Generation:", generation);
+    console.log("\n-----------------------------------------------------------------");
 
     // call run
     run();

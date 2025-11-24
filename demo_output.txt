@@ -1,0 +1,83 @@
+Displaying Menu Options:
+1 - Search for a pokemon
+2 - Search for an Item
+3 - Search for a move
+What function do you want to run? 1
+What term do you want to search for? squirtle
+searching for squirtle
+
+Name: squirtle
+Weight: 90
+Height: 5
+Base experience: 63
+Move Set: [
+  'mega-punch',   'ice-punch',    'mega-kick',      'headbutt',
+  'tackle',       'body-slam',    'take-down',      'double-edge',
+  'tail-whip',    'bite',         'mist',           'water-gun',
+  'hydro-pump',   'surf',         'ice-beam',       'blizzard',
+  'bubble-beam',  'submission',   'counter',        'seismic-toss',
+  'strength',     'dig',          'toxic',          'confusion',
+  'rage',         'mimic',        'double-team',    'withdraw',
+  'defense-curl', 'haze',         'reflect',        'bide',
+  'waterfall',    'skull-bash',   'bubble',         'rest',
+  'rock-slide',   'substitute',   'snore',          'curse',
+  'flail',        'protect',      'mud-slap',       'foresight',
+  'icy-wind',     'outrage',      'endure',         'rollout',
+  'false-swipe',  'swagger',      'attract',        'sleep-talk',
+  'return',       'frustration',  'dynamic-punch',  'rapid-spin',
+  'iron-tail',    'hidden-power', 'rain-dance',     'mirror-coat',
+  'rock-smash',   'whirlpool',    'fake-out',       'hail',
+  'facade',       'focus-punch',  'follow-me',      'helping-hand',
+  'brick-break',  'yawn',         'refresh',        'secret-power',
+  'dive',         'mud-sport',    'weather-ball',   'rock-tomb',
+  'water-spout',  'muddy-water',  'iron-defense',   'mud-shot',
+  'water-pulse',  'gyro-ball',    'brine',          'natural-gift',
+  'fling',        'aqua-ring',    'aura-sphere',    'aqua-tail',
+  'dragon-pulse', 'zen-headbutt', 'captivate',      'aqua-jet',
+  'round',        'scald',        'shell-smash',    'water-pledge',
+  'work-up',      'confide',      'power-up-punch', 'liquidation',
+  ... 6 more items
+]
+
+-----------------------------------------------------------------
+Displaying Menu Options:
+1 - Search for a pokemon
+2 - Search for an Item
+3 - Search for a move
+What function do you want to run? 2
+What term do you want to search for? master-ball
+searching for master-ball
+
+Name: master-ball
+Category: standard-balls
+Cost: 0
+Description: Used in battle
+:   Catches a wild Pokémon without fail.
+
+    If used in a trainer battle, nothing happens and the ball is lost.
+
+-----------------------------------------------------------------
+Displaying Menu Options:
+1 - Search for a pokemon
+2 - Search for an Item
+3 - Search for a move
+What function do you want to run? 3
+What term do you want to search for? 3
+searching for 3
+
+Name: double-slap
+Description: Repeatedly slaps
+2-5 times.
+Type: normal
+Damage class: physical
+Power: 15
+Priority: 0
+Target: selected-pokemon
+Generation: generation-i
+
+-----------------------------------------------------------------
+Displaying Menu Options:
+1 - Search for a pokemon
+2 - Search for an Item
+3 - Search for a move
+What function do you want to run? 
